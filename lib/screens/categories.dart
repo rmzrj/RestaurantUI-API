@@ -30,7 +30,7 @@ class _CategoriesState extends State<Categories> {
     if (response.statusCode == 200) {
       var categoryData = data['data']['branch']['category'];
       List<dynamic> list = categoryData;
-      for (int i = 0; i < 3; i++) {
+      for (int i = 0; i < list.length; i++) {
         datalist.add(Category.fromJson(list[i]));
       }
       return datalist;

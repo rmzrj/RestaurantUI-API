@@ -32,7 +32,7 @@ class _CarouselState extends State<Carousel> {
       var bannerdata = data['data']['branch']['branchBanner'];
       List<dynamic> list = bannerdata;
       BranchBanner bdata = BranchBanner.fromJson(list[0]);
-      for (int i = 0; i < 3; i++) {
+      for (int i = 0; i < list.length; i++) {
         imgList.add(BranchBanner.fromJson(list[i]));
       }
       return imgList;

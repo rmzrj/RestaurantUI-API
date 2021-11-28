@@ -28,7 +28,12 @@ class _RestaurantsState extends State<Restaurants> {
     });
     var data = jsonDecode(response.body);
     List<Restaurant> datalist = [];
+
     if (response.statusCode == 200) {
+      // var restodata = data['data']['branch']['restaurant'];
+      // List<dynamic> list = restodata;
+      // var rdata = data['data']['branch']['restaurant'];
+      // (rdata as Map(String,Dynamic){}).length;
       for (int i = 0; i < 3; i++) {
         datalist.add(Restaurant.fromJson(data['data']['restaurant'][i]));
       }
