@@ -12,7 +12,6 @@ class BottomBar extends StatefulWidget {
 
 class _BottomBarState extends State<BottomBar> {
   int currentindex = 0;
-
   @override
   Widget build(BuildContext context) {
     return BottomNavyBar(
